@@ -178,7 +178,12 @@ async def homepage(request):
     html_file = path / 'view' / 'index.html'
     return HTMLResponse(html_file.open().read())
 
+@app.route('/spotify', methods=['POST'])
+async def login_spotify(request):
+    html_file = path / 'spotify-login' / 'authorization_code'/'public'/'index.html'
 
+    
+    return HTMLResponse(html_file.open().read())
 @app.route('/analyze', methods=['POST'])
 async def analyze(request):
     img_data = await request.form()
