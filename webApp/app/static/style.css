@@ -58,7 +58,15 @@ button.analyze-button {
     font-size: 13px;
     color: #ffffff;
 }
-
+button.spotify-login-button{
+    width: 200px;
+    height: 40px;
+    border: solid 1px #7052CB;
+    border-radius: 2px;
+    background-color: #7052CB;
+    font-size: 13px;
+    color: #ffffff;
+}
 button:focus {
     outline: 0;
 }

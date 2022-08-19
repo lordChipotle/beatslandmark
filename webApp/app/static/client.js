@@ -13,7 +13,15 @@ function showPicked(input) {
   };
   reader.readAsDataURL(input.files[0]);
 }
-
+function spotify_login(){
+  var xhr = new XMLHttpRequest();
+  var loc = window.location;
+  xhr.open("POST", `${loc.protocol}//${loc.hostname}:${loc.port}/spotify`,
+    true);
+  xhr.onerror = function() {
+    alert(xhr.responseText);
+  };
+}
 function analyze() {
   var uploadFiles = el("file-input").files;
   if (uploadFiles.length !== 1) alert("Please select a file to analyze!");

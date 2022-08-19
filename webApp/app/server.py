@@ -179,7 +179,7 @@ async def homepage(request):
     return HTMLResponse(html_file.open().read())
 
 @app.route('/spotify', methods=['POST'])
-async def login_spotify(request):
+async def spotify_login(request):
     html_file = path / 'spotify-login' / 'authorization_code'/'public'/'index.html'
 
     
