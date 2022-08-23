@@ -4,4 +4,4 @@ You can also test changes locally by installing Docker and using the following c
 ```
 docker build -t fastai-v3 . && docker run --rm -it -p 5000:5000 fastai-v3
 ```
-Never eating the wrong hotdogs again!
+
